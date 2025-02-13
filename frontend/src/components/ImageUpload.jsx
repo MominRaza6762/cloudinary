@@ -17,7 +17,7 @@ const ImageUpload = ({ fetchImages }) => {
     formData.append("image", image);
 
     try {
-      await axios.post("http://localhost:5000/api/images/upload", formData);
+      await axios.post("https://cloudinary-api-blue.vercel.app/api/images/upload", formData);
       alert("Image uploaded successfully!");
       setImage(null);
       fetchImages(); // Refresh images after upload
