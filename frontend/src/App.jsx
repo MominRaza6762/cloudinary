@@ -8,7 +8,7 @@ function App() {
 
   const fetchImages = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/images");
+      const res = await axios.get("https://cloudinary-api-blue.vercel.app/api/images");
       setImages(res.data);
     } catch (error) {
       console.error("Failed to fetch images", error);
