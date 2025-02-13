@@ -7,7 +7,7 @@ const ImageGallery = ({ images }) => {
       <div style={{ display: "flex", flexWrap: "wrap" }}>
         {images.map((img) => (
           <div key={img._id} style={{ margin: "10px" }}>
-            <img src={img.imageUrl} alt="Uploaded" width="150px" />
+            <img src={img.imageUrl} alt="Uploaded" width="auto" height="auto />
           </div>
         ))}
       </div>
